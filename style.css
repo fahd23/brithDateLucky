@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+:root {
+    --dark-color: #000000;
+    --primary-color: #BD4B4B;
+    --secondary-color: #EFB7B7;
+    --ow-color: #EEEEEE;
+}
+*{
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--ow-color);
+    color: var(--primary-color);
+}
+
+#container {
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    margin: 5rem auto 3rem;
+}
+
+label,
+input {
+    font-family: 'Work Sans', sans-serif;
+    display: block;
+    padding: 0.75rem;
+}
+
+label {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+input {
+    border-radius: 0.2rem;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+#check-btn {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+    border-radius: 1rem;
+}
+.output{
+    margin-top: 1rem;
+    font-family: 'Work Sans', sans-serif ;
+}
+@media only screen and (min-width: 700px) {
+    input {
+      width:20% 
+    }
+}
+
+#footer{
+    width: 100%;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--dark-color);
+    background-color: var(--secondary-color);
+}
+.footer-icon{
+    color: var(--dark-color);
+    text-decoration: none;
+    margin: 1rem 1.5rem;
+}
