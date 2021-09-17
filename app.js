@@ -14,10 +14,14 @@ function validate() {
     outputmsg.style.display = "none";
     const dob = birthDate.value;
     const sum = calculateSum(dob);
-    if(sum&&luckyNumber.value)
+    if(sum&&luckyNumber.value > 0)
     compareValues(sum,luckyNumber.value);
-    else
-    msg("Please enter both the fields");
+    else if(luckyNumber.value <= 0){
+        msg("Please enter Lucky number as positive");
+    }else{
+        msg("Please enter both the fields");
+    }
+
 }
 
 function msg(text) {
